@@ -2,7 +2,7 @@ require 'ffi'
 
 module Sale
   extend FFI::Library
-  ffi_lib 'csv/target/release/libcsv.dylib'
+  ffi_lib 'EC/target/release/libcsv.dylib'
   attach_function :foo, [:double, :double], :double
 end
 
@@ -24,7 +24,7 @@ p probability
 
 module Magnification
   extend FFI::Library
-  ffi_lib 'csv/target/release/libcsv.dylib'
+  ffi_lib 'EC/target/release/libcsv.dylib'
   attach_function :fa, [], :double
 end
 
